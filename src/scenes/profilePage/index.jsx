@@ -1,6 +1,6 @@
 import { Box, useMediaQuery } from "@mui/material"
 import { useEffect, useState } from "react"
-import { UseSelector, useSelector } from "react-redux/es/hooks/useSelector"
+import { useSelector } from "react-redux/es/hooks/useSelector"
 import { useParams } from "react-router-dom"
 import Navbar from "scenes/navbar"
 import FriendListWidget from "scenes/widgets/FriendListWidget"
@@ -26,7 +26,7 @@ const ProfilePage = () => {
 
   useEffect(() => {
     getUser();
-  },[]) //eslint-disable-lne react-hooks/exhaustive-deps
+  },[]) //eslint-disable-line react-hooks/exhaustive-deps
 
   if (!user) return null
 
